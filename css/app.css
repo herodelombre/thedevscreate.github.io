@@ -1,19 +1,19 @@
     :root {
-      --bg: #f6f6f9;
+      --bg: #f0f4f8;
       --bg-accent: rgba(255, 255, 255, 0.5);
-      --text: #0b0d18;
-      --muted: #5a5e73;
-      --accent: #5d5fef;
-      --glow: rgba(93, 95, 239, 0.35);
+      --text: #0a1929;
+      --muted: #4a5a6a;
+      --accent: #1e88e5;
+      --glow: rgba(30, 136, 229, 0.35);
     }
 
     [data-theme="dark"] {
-      --bg: #080914;
-      --bg-accent: rgba(11, 13, 24, 0.75);
-      --text: #f9fbff;
-      --muted: #b4b8d0;
-      --accent: #f7a76c;
-      --glow: rgba(247, 167, 108, 0.4);
+      --bg: #0a1929;
+      --bg-accent: rgba(10, 25, 41, 0.75);
+      --text: #f0f7ff;
+      --muted: #a0b4c8;
+      --accent: #42a5f5;
+      --glow: rgba(66, 165, 245, 0.4);
       
     }
 
@@ -103,11 +103,11 @@
 
     .search-input:focus {
       border-color: var(--accent);
-      box-shadow: 0 0 0 2px rgba(93, 95, 239, 0.1);
+      box-shadow: 0 0 0 2px rgba(30, 136, 229, 0.1);
     }
 
     [data-theme="dark"] .search-input:focus {
-      box-shadow: 0 0 0 2px rgba(247, 167, 108, 0.1);
+      box-shadow: 0 0 0 2px rgba(66, 165, 245, 0.1);
     }
 
     .search-results {
@@ -271,14 +271,14 @@
       cursor: pointer;
       font-size: 1rem;
       letter-spacing: 0.02em;
-      box-shadow: 0 20px 40px rgba(93, 95, 239, 0.35);
+      box-shadow: 0 20px 40px rgba(30, 136, 229, 0.35);
       transition: transform 250ms ease, box-shadow 250ms ease;
       overflow: hidden;
       isolation: isolate;
     }
 
     [data-theme="dark"] .goo-btn {
-      box-shadow: 0 20px 50px rgba(247, 167, 108, 0.35);
+      box-shadow: 0 20px 50px rgba(66, 165, 245, 0.35);
     }
 
     .goo-btn::before,
@@ -304,11 +304,11 @@
 
     .goo-btn:hover {
       transform: translateY(-2px);
-      box-shadow: 0 25px 55px rgba(93, 95, 239, 0.45);
+      box-shadow: 0 25px 55px rgba(30, 136, 229, 0.45);
     }
 
     [data-theme="dark"] .goo-btn:hover {
-      box-shadow: 0 25px 55px rgba(247, 167, 108, 0.45);
+      box-shadow: 0 25px 55px rgba(66, 165, 245, 0.45);
     }
 
     .hero-actions span {
@@ -339,13 +339,13 @@
     }
 
     .swatch.light {
-      background: linear-gradient(135deg, #f6f6f9, #d3def8);
-      color: #0b0d18;
+      background: linear-gradient(135deg, #e3f2fd, #90caf9);
+      color: #0a1929;
     }
 
     .swatch.dark {
-      background: linear-gradient(135deg, #070a1a, #1b1f3a);
-      color: #f9fbff;
+      background: linear-gradient(135deg, #0a1929, #1e3a5f);
+      color: #f0f7ff;
     }
 
     .illustration {
@@ -377,7 +377,7 @@
       width: 70px;
       height: 70px;
       border-radius: 50%;
-      background: radial-gradient(circle at 30% 30%, #fff1d0, #f0b67f);
+      background: radial-gradient(circle at 30% 30%, #e3f2fd, #42a5f5);
       top: -35px;
       left: 50%;
       transform: translateX(-50%);
@@ -405,7 +405,7 @@
       left: -10%;
       width: 140%;
       height: 80%;
-      background: radial-gradient(circle at 50% 20%, rgba(255, 214, 164, 0.7), transparent 60%);
+      background: radial-gradient(circle at 50% 20%, rgba(100, 181, 246, 0.7), transparent 60%);
       transition: transform 800ms ease, opacity 800ms ease;
     }
 
