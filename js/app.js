@@ -68,37 +68,37 @@ const teamMembers = [
     name: 'ブルータス',
     avatarUrl: 'https://cdn.discordapp.com/avatars/1419447976107184128/6091dae2b44a70a8d5ee02d06424db53.webp',
     role: 'Owner',
-    roleColor: '#e91e63' // Replace with actual Discord role color
+    roleColor: '#0086e6' // Replace with actual Discord role color
   },
   { 
     name: 'kbzx4',
     avatarUrl: 'https://cdn.discordapp.com/avatars/1339302301940322344/893a65951cd91dac07fac9ea93c6f243.webp',
     role: 'Management',
-    roleColor: '#9c27b0' // Replace with actual Discord role color
+    roleColor: '#0080db' // Replace with actual Discord role color
   },
   { 
     name: 'ItzTreaty',
     avatarUrl: 'https://cdn.discordapp.com/avatars/876980860769955891/23c8abf6a0a10023cb8e8a1a7323f65a.webp',
     role: 'Management',
-    roleColor: '#9c27b0' // Replace with actual Discord role color
+    roleColor: '#0080db' // Replace with actual Discord role color
   },
   { 
     name: 'Chara',
     avatarUrl: 'https://cdn.discordapp.com/avatars/1341372348741324801/ecf2e90e3cf5fb0488cc96e3db48fbf4.webp',
     role: 'Management',
-    roleColor: '#9c27b0' // Replace with actual Discord role color
+    roleColor: '#0080db' // Replace with actual Discord role color
   },
   { 
     name: 'AFK / cm | averydoesmagic 🔥 105',
     avatarUrl: 'https://cdn.discordapp.com/avatars/567185519063203846/8125888cf7952d1e7168135ed59b2f4f.webp',
     role: 'Management',
-    roleColor: '#9c27b0' // Replace with actual Discord role color
+    roleColor: '#0080db' // Replace with actual Discord role color
   },
   { 
     name: 'wintercoder1',
     avatarUrl: 'https://cdn.discordapp.com/avatars/983692760072745020/74b7f4384209d260797538f40953e02e.webp',
     role: 'Administrator',
-    roleColor: '#2196f3' // Replace with actual Discord role color
+    roleColor: '#0095ff' // Replace with actual Discord role color
   }
 ];
 
@@ -118,7 +118,7 @@ async function loadTeamMembers() {
       
       card.innerHTML = `
         <img class="team-avatar" src="${avatarUrl}" alt="${member.name}">
-        <h3 class="team-name" style="color: ${member.roleColor || 'var(--text)'};">${member.name}</h3>
+        <h3 class="team-name" style="color: ${member.roleColor || 'var(--text)'}; text-shadow: 0 0 20px ${member.roleColor || 'transparent'}80, 0 0 40px ${member.roleColor || 'transparent'}40;">${member.name}</h3>
         <p class="team-role">${member.role}</p>
       `;
       
